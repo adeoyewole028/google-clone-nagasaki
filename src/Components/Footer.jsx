@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -12,7 +13,7 @@ function Footer() {
                     <li><Link to="./">How search Works</Link></li>
                 </ul>
                 <ul>
-                    <li><Link to="./"><img src="./download.png" alt="download" />Carbon neutral since 2007</Link></li>
+                    <li><Link to="./"><img src="./download.png" alt="" />Carbon neutral since 2007</Link></li>
                 </ul>
                 <ul>
                     <li><Link to="./">Privacy</Link></li>
