@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -6,18 +6,18 @@ function Footer() {
             <h4>Nigeria</h4>
             <div>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Busines</a></li>
-                    <li><a href="#">How search Works</a></li>
+                    <li><Link to="./">About</Link></li>
+                    <li><Link to="./">Advertising</Link></li>
+                    <li><Link to="./">Busines</Link></li>
+                    <li><Link to="./">How search Works</Link></li>
                 </ul>
                 <ul>
-                    <li><a href="#"><img src="./download.png" alt="" />Carbon neutral since 2007</a></li>
+                    <li><Link to="./"><img src="./download.png" alt="download" />Carbon neutral since 2007</Link></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><Link to="./">Privacy</Link></li>
+                    <li><Link to="./">Terms</Link></li>
+                    <li><Link to="./">Settings</Link></li>
                 </ul>
             </div>
         </footer>
