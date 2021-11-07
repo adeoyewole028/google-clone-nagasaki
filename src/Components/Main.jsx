@@ -1,6 +1,5 @@
 import Search from "./Search";
 import { useState } from "react"
-import { Link } from "react-router-dom";
 
 function Main() {
 	let [Input, setInput] = useState("")
@@ -9,16 +8,16 @@ function Main() {
 	}
 	return (
 		<div className="main">
-			{Input === "" ? <Link to="./"><img src="./logo-dark.64d45129.png" alt="" /></Link> : <h1>{Input}</h1>}
+			{Input === "" ? <a href="#"><img id="logo" src="./logo-dark.64d45129.png" alt="" /></a> : <h1 id="outpt">{Input}</h1>}
 			<Search handle={handle}/>
 			<span className="sas">
-				<Link href="./">Google Search</Link>
-				<Link href="./">I'm Feeling Lucky</Link>
+				<a href="#">Google Search</a>
+				<a href="#">I'm Feeling Lucky</a>
 			</span>
 			<p>
-				Google offered in: <Link href="./">Hausa</Link> <Link href="./">Igbo</Link>{" "}
-				<Link href="./">Edo</Link>
-				<Link href="./">Yoruba</Link> <Link href="./">Nigerian Pidgin</Link>
+				Google offered in: <a href="#">Hausa</a> <a href="#">Igbo</a>{" "}
+				<a href="#">Edo</a>
+				<a href="#">Yoruba</a> <a href="#">Nigerian Pidgin</a>
 			</p>
 		</div>
 	);
