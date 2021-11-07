@@ -1,6 +1,7 @@
 import AppsRoundedIcon from "@mui/icons-material/AppsRounded";
 import PriorityHighRoundedIcon from "@mui/icons-material/PriorityHighRounded";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
 	const [Open, setOpen] = useState(false);
@@ -11,10 +12,10 @@ function Nav() {
 		<nav className="nav">
 			<ul>
 				<li>
-					<a href="#">Gmail</a>
+					<Link to="./">Gmail</Link>
 				</li>
 				<li>
-					<a href="#">Images</a>
+					<Link to="./">Images</Link>
 				</li>
 				<li onClick={open} className="ap">
 					<AppsRoundedIcon />
@@ -35,7 +36,7 @@ function Nav() {
 						<p> launcher right now. Try again or</p>
 						<p>
 							{" "}
-							go to the <a href="#">Google Products</a> page
+							go to the <Link to="./">Google Products</Link> page
 						</p>
 					</div>
 				</ul>
